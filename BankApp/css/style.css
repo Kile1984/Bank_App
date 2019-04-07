@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Oswald|Playfair+Display|Spicy+Rice');
+body{
+	/*font-family: 'Montserrat', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Spicy Rice', cursive;
+	font-family: 'Playfair Display', serif;*/
+	font-family: 'Inconsolata', monospace;
+}
+.jumbotron{
+	background: url("bankAppBgr.jpg") no-repeat;
+	background-size: cover;
+    background-position: center;
+    border-radius: 0;
+}
+.jumbotron button{
+	background: #ffc107;
+	border: 1px solid #000!important;
+	cursor: pointer;
+}
+.jumbotron button:focus{
+	box-shadow: none!important;
+	outline: 0;
+}
+.jumbotron button:hover, .profileBtn:hover, #addAccountRow button:hover, .editBtnYellow:hover, .deleteBtnRed:hover, .modalClose:hover, .modal-footer button:hover{
+	box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5)!important;
+}
+.profileBtn, .modalClose, .editBtnYellow, .deleteBtnRed{
+	border: 1px solid #000!important;
+}
+.profileBtn:focus, .modalClose:focus{
+	box-shadow: none!important;
+}
+input{
+	background: transparent;
+	border: 2px solid black;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+input:focus, #iCard:focus, #eCard:focus{
+	outline: 0;
+	border: 2px solid #ffc107;
+	transition: .5s;
+}
+.bgr{
+	background: url("blue-background-large.png") no-repeat;
+	background-size: cover;
+    background-position: center;
+    height: 100%;
+    overflow: hidden;
+}
+.table thead th{
+	width: 200px;
+}
+.myTable th{
+	border-top: 0!important;
+}
+.myModalTable th{
+	border-bottom: 1px solid #dee2e6!important;
+}
+.myModalTable td{
+	border-bottom: 1px solid #dee2e6;
+}
+.myModalTable input{
+	color: #000!important;
+}
+.myModalTable select{
+	border-radius: 0;
+}
+.myModalTable option{
+	color: #000;
+}
+.modal-footer{
+	border: 0;
+}
+.modal-header{
+	border-bottom: 0;
+}
+.modal-content{
+	border-radius: 0;
+}
+.modal-title span, .modal-body span{
+	color: #ffc107;;
+}
+.close, .close:focus{
+	border: 0!important;
+	outline: 0!important;
+	box-shadow: none!important;
+}
+#addAccountRow button, #editAccountRow button, .modal-footer button{
+	border: 1px solid #000;
+}
+#addAccountRow input, #editAccountRow input, .myModalTable input{
+	background: transparent;
+	border-radius: 0;
+	color: #fff;
+}
+#addAccountRow input:focus, #editAccountRow input:focus, #iCard:focus, #eCard:focus, .myModalTable input:focus{
+	box-shadow: none!important;
+	outline: 0!important;
+	border-color: #000;
+}
+#iCard{
+	box-shadow: none!important;
+	outline: 0!important;
+	background: transparent;
+	border-radius: 0;
+	color: #fff;
+}
+#iCard option, #eCard option{
+	color: #000;
+}
+#mainRow, #addAccountRow, #editAccountRow{
+	transition: .7s;
+}
+#acountsBtn:before, #addAccountBtn:before, #editAccountBtn:before, #searchBtn:before,
+#idBefore:before, #firstNameBefore:before, #lastNameBefore:before, #depositBefore:before,
+#cardBefore:before{
+	vertical-align: -webkit-baseline-middle;
+	padding-right: 10px;
+}
+#acountsBtn:before{
+	content: url("account.png");
+}
+#addAccountBtn:before{
+	content: url("addAccount.png");
+}
+#editAccountBtn:before{
+	content: url("editAccount.png");
+}
+#searchBtn:before{
+	content: url("searchAccount.png");
+}
+#idBefore:before{
+	content: url("id-card.png");
+}
+#firstNameBefore:before{
+	content: url("first-name.png");
+}
+#lastNameBefore:before{
+	content: url("last-name.png");
+}
+#depositBefore:before{
+	content: url("deposit.png");
+}
+#cardBefore:before{
+	content: url("credit-card.png");
+}
+@media (max-width: 1024px) {
+	.table thead th{
+		width: 173px;
+	}
+}
+@media (max-width: 768px) {
+	.table thead th{
+		width: 113px;
+	}
+	th:before{
+		display: none;
+	}
+}
+@media (max-width: 575.98px) { 
+	table{
+	display: block;
+    overflow-x: auto;
+	}
+	.jumbotron button{
+	display: block;
+    width: 100%;
+    margin: 10px 0;	
+	}
+}
+
